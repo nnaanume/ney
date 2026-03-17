@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YOUR BRAND — Fresh Coconut Water | Accra, Ghana</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ─── NAVBAR ─── -->
+<nav>
+  <a href="#" class="nav-logo">🥥 YOUR BRAND</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#products">Order</a></li>
+    <li><a href="#benefits">Benefits</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <span class="nav-cart" id="navCartBtn" onclick="openModal('cartModal')">🛒 Cart (0)</span>
+    <button class="nav-cta" onclick="openModal('orderModal')">Order Now</button>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ─── HERO ─── -->
+<section class="hero" id="home">
+  <div class="hero-grid">
+    <div class="hero-text">
+      <span class="hero-eyebrow">🌴 100% Fresh & Natural</span>
+      <h1>Pure. Fresh.<br><em>Coconut Water.</em></h1>
+      <p class="hero-sub">
+        Straight from the source. No additives, no preservatives — just pure,
+        chilled coconut water delivered to your door in Accra.
+        Refreshment the way nature intended.
+      </p>
+      <div class="hero-btns">
+        <a href="#products" class="btn-primary">View Sizes &amp; Order</a>
+        <a href="#benefits" class="btn-outline">Why Coconut Water?</a>
+      </div>
+    </div>
+    <div class="hero-img-wrap">
+      <img
+        src="https://images.unsplash.com/photo-1550699026-4879a198d326?w=600&q=75"
+        alt="Fresh Coconut Water"
+      />
+      <div class="hero-badge"><span>100%</span>No Additives</div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── ABOUT ─── -->
+<section id="about">
+  <div class="about-grid">
+    <div class="about-img">
+      <img
+        src="https://images.unsplash.com/photo-1601924582975-f02ead3d280c?w=600&q=75"
+        alt="Fresh Coconuts"
+      />
+      <div class="about-tag">
+        <div class="big">Accra</div>
+        Based &amp; Proud
+      </div>
+    </div>
+    <div class="about-text">
+      <span class="eyebrow">Our Story</span>
+      <h2>Nature's Most <em style="font-style:italic; color:var(--primary)">Perfect</em> Drink</h2>
+      <p>
+        We started with one simple belief: people deserve access to genuinely fresh,
+        pure coconut water — not bottled imitations loaded with sugar and preservatives.
+        So we went straight to the source.
+      </p>
+      <p>
+        Every batch we prepare is freshly sourced, chilled, and delivered to you with
+        zero compromise on quality. When you drink with us, you're drinking nature at its best.
+      </p>
+      <div class="about-stats">
+        <div class="stat">
+          <div class="num">100%</div>
+          <div class="lbl">Natural</div>
+        </div>
+        <div class="stat">
+          <div class="num">0</div>
+          <div class="lbl">Additives</div>
+        </div>
+        <div class="stat">
+          <div class="num">3</div>
+          <div class="lbl">Size Options</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── PRODUCTS ─── -->
+<section id="products">
+  <div class="section-center">
+    <span class="eyebrow">Choose Your Size</span>
+    <h2>Fresh Coconut Water</h2>
+    <p class="lead">
+      One product, three sizes. Pure, chilled, and ready to refresh you.
+      Pick the size that suits you best.
+    </p>
+  </div>
+  <div class="products-grid">
+
+    <!-- 1 Litre -->
+    <div class="product-card">
+      <div class="product-img">
+        <img
+          src="https://images.unsplash.com/photo-1550699026-4879a198d326?w=500&q=70"
+          alt="1 Litre Coconut Water"
+        />
+        <span class="product-badge popular">Best Value</span>
+      </div>
+      <div class="product-body">
+        <div class="product-stars">★★★★★</div>
+        <h3>Fresh Coconut Water</h3>
+        <span class="product-size">1 Litre</span>
+        <p>
+          Our largest size — perfect for sharing, post-workout recovery, or keeping
+          you hydrated all day long. The best bang for your money.
+        </p>
+        <div class="product-footer">
+          <span class="product-price">₵30</span>
+          <button class="btn-cart" onclick="addToCart('Fresh Coconut Water — 1 Litre', 30)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 350ml -->
+    <div class="product-card">
+      <div class="product-img">
+        <img
+          src="https://images.unsplash.com/photo-1601924582975-f02ead3d280c?w=500&q=70"
+          alt="350ml Coconut Water"
+        />
+        <span class="product-badge">Most Popular</span>
+      </div>
+      <div class="product-body">
+        <div class="product-stars">★★★★★</div>
+        <h3>Fresh Coconut Water</h3>
+        <span class="product-size">350 ml</span>
+        <p>
+          The perfect everyday size. Great for lunch, on the go, or as a midday
+          refresher. Cool, clean, and totally satisfying.
+        </p>
+        <div class="product-footer">
+          <span class="product-price">₵15</span>
+          <button class="btn-cart" onclick="addToCart('Fresh Coconut Water — 350ml', 15)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 250ml -->
+    <div class="product-card">
+      <div class="product-img">
+        <img
+          src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=500&q=70"
+          alt="250ml Coconut Water"
+        />
+        <span class="product-badge value">Quick Sip</span>
+      </div>
+      <div class="product-body">
+        <div class="product-stars">★★★★★</div>
+        <h3>Fresh Coconut Water</h3>
+        <span class="product-size">250 ml</span>
+        <p>
+          Light, quick, and refreshing. Ideal for kids, a quick snack break, or
+          whenever you need a small but mighty sip of nature.
+        </p>
+        <div class="product-footer">
+          <span class="product-price">₵10</span>
+          <button class="btn-cart" onclick="addToCart('Fresh Coconut Water — 250ml', 10)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ─── BENEFITS ─── -->
+<section id="benefits">
+  <div class="section-center">
+    <span class="eyebrow" style="color:rgba(255,255,255,0.6)">Why Coconut Water?</span>
+    <h2 style="color:#fff;">Nature's Best-Kept Secret</h2>
+    <p class="lead" style="color:rgba(255,255,255,0.65)">Packed with nutrients your body loves — naturally.</p>
+  </div>
+  <div class="benefits-grid">
+    <div class="benefit-item">
+      <div class="icon">💧</div>
+      <h4>Deeply Hydrating</h4>
+      <p>Packed with electrolytes that hydrate faster and more effectively than plain water.</p>
+    </div>
+    <div class="benefit-item">
+      <div class="icon">⚡</div>
+      <h4>Natural Energy</h4>
+      <p>Natural sugars and potassium give you a clean, sustained energy boost with no crash.</p>
+    </div>
+    <div class="benefit-item">
+      <div class="icon">🌿</div>
+      <h4>Zero Additives</h4>
+      <p>No preservatives, no artificial flavours. Just pure coconut water, exactly as nature made it.</p>
+    </div>
+    <div class="benefit-item">
+      <div class="icon">❤️</div>
+      <h4>Good for You</h4>
+      <p>Low in calories, rich in antioxidants and minerals. A drink that genuinely loves you back.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── TESTIMONIALS ─── -->
+<section id="testimonials">
+  <div class="section-center">
+    <span class="eyebrow">Happy Customers</span>
+    <h2>What Our Customers Say</h2>
+  </div>
+  <div class="testimonials-grid">
+    <div class="tcard">
+      <div class="tcard-stars">★★★★★</div>
+      <p>"Honestly the most refreshing thing I've had in Accra. You can taste how fresh it is — no funny aftertaste like the bottled stuff. I order the 1 litre every week now!"</p>
+      <div class="tcard-author">
+        <div class="tcard-avatar">AA</div>
+        <div class="tcard-name">Ama A.</div>
+      </div>
+    </div>
+    <div class="tcard">
+      <div class="tcard-stars">★★★★★</div>
+      <p>"I get the 350ml for my lunch break every day. It keeps me going through the afternoon without any of the sugar crash you get from fizzy drinks. Love it!"</p>
+      <div class="tcard-author">
+        <div class="tcard-avatar">KO</div>
+        <div class="tcard-name">Kofi O.</div>
+      </div>
+    </div>
+    <div class="tcard">
+      <div class="tcard-stars">★★★★★</div>
+      <p>"My kids absolutely love the 250ml size as an after-school drink. Healthy, natural, and they actually enjoy it. Best switch I've made for them!"</p>
+      <div class="tcard-author">
+        <div class="tcard-avatar">SN</div>
+        <div class="tcard-name">Sarah N.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FAQ ─── -->
+<section id="faq">
+  <div class="section-center">
+    <span class="eyebrow">Common Questions</span>
+    <h2>Everything You Need to Know</h2>
+  </div>
+  <div class="faq-list">
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Is your coconut water really fresh? <span class="icon">+</span>
+      </button>
+      <div class="faq-a">
+        Yes — 100%. We do not use any concentrate, powders, or preservatives. Our coconut water is
+        freshly extracted and chilled before every order. What you receive is exactly what comes
+        straight out of the coconut.
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        How long does it stay fresh after delivery? <span class="icon">+</span>
+      </button>
+      <div class="faq-a">
+        Because it contains no preservatives, we recommend drinking it within 24–48 hours of
+        receiving it. Keep it refrigerated and sealed until you're ready to enjoy it.
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Where do you deliver? <span class="icon">+</span>
+      </button>
+      <div class="faq-a">
+        We currently deliver across Accra and Tema. Delivery fees vary by location. Reach out to
+        us on WhatsApp to confirm your area and arrange delivery.
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Can I place a bulk order? <span class="icon">+</span>
+      </button>
+      <div class="faq-a">
+        Absolutely! We welcome bulk orders for offices, events, gyms, and more. Contact us via
+        WhatsApp or the form below for a custom quote on large quantities.
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Do you add any sugar or flavouring? <span class="icon">+</span>
+      </button>
+      <div class="faq-a">
+        Never. Our coconut water is completely natural — no added sugar, no flavouring, no
+        additives of any kind. Just pure coconut water, nothing else.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── INSTAGRAM ─── -->
+<section id="instagram">
+  <div class="section-center">
+    <span class="eyebrow">Follow Our Journey</span>
+    <h2>See What's Fresh</h2>
+  </div>
+  <div class="insta-grid">
+    <div class="insta-item"><img src="https://images.unsplash.com/photo-1550699026-4879a198d326?w=300&q=60" alt="" /></div>
+    <div class="insta-item"><img src="https://images.unsplash.com/photo-1601924582975-f02ead3d280c?w=300&q=60" alt="" /></div>
+    <div class="insta-item"><img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=300&q=60" alt="" /></div>
+    <div class="insta-item"><img src="https://images.unsplash.com/photo-1559181567-c3190ca9be3c?w=300&q=60" alt="" /></div>
+    <div class="insta-item"><img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=300&q=60" alt="" /></div>
+    <div class="insta-item"><img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=300&q=60" alt="" /></div>
+  </div>
+  <p class="insta-handle">Follow us <a href="https://instagram.com/yourbrand" target="_blank">@yourbrand</a></p>
+</section>
+
+<!-- ─── WHY US ─── -->
+<section id="why">
+  <div class="section-center">
+    <span class="eyebrow" style="color:rgba(255,255,255,0.5)">Why Choose Us</span>
+    <h2>Fresh. Simple. Delivered.</h2>
+  </div>
+  <div class="why-grid">
+    <div class="why-card">
+      <div class="why-icon">🥥</div>
+      <h4>Genuinely Fresh</h4>
+      <p>Freshly extracted for every order. No shortcuts, no concentrate — you always get the real thing.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">🚚</div>
+      <h4>Delivered to You</h4>
+      <p>Chilled and delivered straight to your doorstep across Accra and Tema. No need to go anywhere.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">📱</div>
+      <h4>Easy WhatsApp Orders</h4>
+      <p>Order in seconds via WhatsApp. No complicated checkout — just message us and we handle the rest.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CONTACT ─── -->
+<section id="contact">
+  <div class="section-center">
+    <span class="eyebrow">Get In Touch</span>
+    <h2>We'd Love to Hear From You</h2>
+  </div>
+  <div class="contact-grid">
+    <div class="contact-info">
+      <h3>Contact Information</h3>
+      <div class="contact-item">
+        <span class="lbl">Phone / WhatsApp</span>
+        <a href="tel:+233XXXXXXXXX">+233 XX XXX XXXX</a>
+      </div>
+      <div class="contact-item">
+        <span class="lbl">Email</span>
+        <a href="mailto:hello@yourbrand.com">hello@yourbrand.com</a>
+      </div>
+      <div class="contact-item">
+        <span class="lbl">Location</span>
+        <span>Accra, Ghana</span>
+      </div>
+    </div>
+    <div class="contact-form">
+      <div class="form-group">
+        <label>Your Name</label>
+        <input type="text" id="cName" placeholder="Kofi Mensah" />
+      </div>
+      <div class="form-group">
+        <label>Phone Number</label>
+        <input type="tel" id="cPhone" placeholder="+233 XX XXX XXXX" />
+      </div>
+      <div class="form-group">
+        <label>How can we help you?</label>
+        <textarea id="cMsg" placeholder="I'd like to order..."></textarea>
+      </div>
+      <button class="btn-wa" onclick="sendContactWA()" style="align-self:flex-start;">
+        💬 Send to WhatsApp
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─── -->
+<footer>
+  <div class="footer-logo">🥥 YOUR BRAND</div>
+  <div class="footer-tagline">Pure Fresh Coconut Water — Accra, Ghana</div>
+  <div class="footer-links">
+    <a href="#about">About</a>
+    <a href="#products">Order</a>
+    <a href="#benefits">Benefits</a>
+    <a href="#contact">Contact</a>
+    <a href="https://instagram.com/yourbrand" target="_blank">Instagram</a>
+  </div>
+  <div class="footer-copy">© 2026 Your Brand. All rights reserved.</div>
+</footer>
+
+<!-- ─── FLOATING CART PILL ─── -->
+<button class="cart-pill" id="cartPill" onclick="openModal('cartModal')">
+  🛒 View Cart (<span id="cartCount">0</span>)
+</button>
+
+<!-- ─── ORDER MODAL ─── -->
+<div class="modal-overlay" id="orderModal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('orderModal')">×</button>
+    <h3>🥥 Add to Cart</h3>
+    <div class="form-group" style="margin-bottom:14px">
+      <label>Select Size</label>
+      <select id="modalProduct">
+        <option value="Fresh Coconut Water — 1 Litre" data-price="30">1 Litre — ₵30</option>
+        <option value="Fresh Coconut Water — 350ml"   data-price="15">350ml — ₵15</option>
+        <option value="Fresh Coconut Water — 250ml"   data-price="10">250ml — ₵10</option>
+      </select>
+    </div>
+    <div class="form-group" style="margin-bottom:14px">
+      <label>Quantity</label>
+      <input type="number" id="modalQty" value="1" min="1" />
+    </div>
+    <button class="btn-primary" onclick="addFromModal()" style="width:100%; border-radius:10px;">
+      Add to Cart
+    </button>
+  </div>
+</div>
+
+<!-- ─── CART MODAL ─── -->
+<div class="modal-overlay" id="cartModal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('cartModal')">×</button>
+    <h3>🛒 Your Cart</h3>
+    <div id="cartItems" style="margin-bottom:18px; min-height:60px; color:var(--muted); font-size:0.9rem;"></div>
+    <div style="font-family:'Playfair Display',serif; font-size:1.2rem; font-weight:700; color:var(--dark); margin-bottom:20px;">
+      Total: ₵<span id="cartTotal">0</span>
+    </div>
+    <div class="form-group" style="margin-bottom:12px">
+      <label>Your Name</label>
+      <input type="text" id="orderName" placeholder="Your name" />
+    </div>
+    <div class="form-group" style="margin-bottom:12px">
+      <label>Phone Number</label>
+      <input type="tel" id="orderPhone" placeholder="+233 XX XXX XXXX" />
+    </div>
+    <div class="form-group" style="margin-bottom:12px">
+      <label>Delivery Area</label>
+      <select id="orderArea">
+        <option value="">Select area (optional)</option>
+        <option>East Legon</option>
+        <option>Spintex</option>
+        <option>Teshie</option>
+        <option>Nungua</option>
+        <option>Osu</option>
+        <option>Airport Residential</option>
+        <option>Dansoman</option>
+        <option>Tema</option>
+        <option>Madina / Adenta</option>
+        <option>Achimota</option>
+        <option>Other</option>
+      </select>
+    </div>
+    <div class="form-group" style="margin-bottom:18px">
+      <label>Extra Directions</label>
+      <textarea id="orderNote" placeholder="Gate colour, landmark..." style="min-height:70px;"></textarea>
+    </div>
+    <div style="display:flex; gap:12px;">
+      <button class="btn-outline" onclick="clearCart()" style="color:var(--text); border-color:var(--border);">
+        Clear Cart
+      </button>
+      <button class="btn-wa" onclick="sendOrderWA()">📲 Send Order</button>
+    </div>
+  </div>
+</div>
+
+<!-- ─── SCRIPT ─── -->
+<script src="main.js"></script>
+
+</body>
+</html>
