@@ -3,7 +3,7 @@
    ============================================================ */
 
 // ── CONFIG — update your WhatsApp number here ──
-const PHONE = '233264888513';
+const PHONE = '233245354165';
 
 // ── CART STATE ──
 let cart = [];
