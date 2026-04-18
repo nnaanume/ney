@@ -455,7 +455,7 @@ h2 {
 
 .product-img img {
   width: 100%;
-  aspect-ratio: 1;
+  aspect-ratio: ;
   object-fit: cover;
   transition: transform 0.35s;
   display: block;
@@ -687,7 +687,7 @@ h2 {
 }
 
 .insta-item img {
-  width: 100%;
+  width: ;
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s;
